@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title>Form-2</title>
+</head>
+<body>
+
+<p>Numberic restrictions will apply in the input field </p>
+
+<form action="action-page.php">
+	
+<!-- quantity between 1 to 5 -->
+	Quantity between 1 to 5: <input type="number" name="quantity" min="1" max="5" />
+	<inout type="submit" />	
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- quantity between 1 to 100 steping by 10 -->
+	Quantity: <input type="number" name="quantity" min="1" max="100" step="10" value="30" />
+	<inout type="submit" />	
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- Date -->
+	Birthday: <input type="date" name="bday" />
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- min and Mazx date -->
+	Enter a date before 1980-01-01: <input type="date" name="bdaymax" max="1979-12-31" /><br/>
+
+	Enter a date before 2000-01-02: <input type="date" name="bdaymin" min="2000-01-02"<br />
+</form
+<hr />
+<form action="action-page.php">
+	
+<!-- Month -->
+	Birthday: <input type="month" name="bdaymonth" />
+	<input type="submit" />
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- Week -->
+	Select week: <input type="week" name="week-year" />
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- time -->
+	Select time: <input type="time" name="usr-time" />
+</form>
+<hr />
+<form action="action-page.php">
+	
+<!-- Date and time-->
+	Birthday: <input type="datetime-local" name="bdaytime" />
+	<input type="submit" value="send"/>
+</form>
+<hr />
+<form >
+	
+<!-- Email -->
+	Email: <input type="email" name="mail" />
+</form>
+<hr />
+<form >
+	
+<!-- search -->
+	Search Google: <input type="search" name="googlesearch" />
+</form>
+<hr />
+<form >
+	
+<!-- URL -->
+	Add your homepage: <input type="url" name="homepage" />
+</form>
+
+<hr />
+
+<!-- placeholder -->
+<form action="action-page.php">
+	<input type="text" name="fname" placeholder="First Name"><br />
+	<input type="text" name="lname" placeholder="Last Name"><br />
+	<input type="submit" value="send"/>
+
+</form>
+
+<!-- group option -->
+<form>
+	<fieldset>
+	<legend>Personalia</legend>
+	Name:<input type="text" /><br />
+	Email:<input type="text"/><br />
+	Date of birth<input type="date"/>
+	</fieldset>
+</form>
+<!-- group option -->
+<form>
+	<fieldset>
+	<legend>Menue -1</legend>
+	Fruits:<input type="text" /><br />
+	Drinks:<input type="text"/><br />
+	vegetables<input type="date"/>
+	</fieldset>
+</form>
+	
+</body>
+</html>
